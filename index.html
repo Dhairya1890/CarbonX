@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IfEveryoneLivedLikeYou</title>
+    <title>CarbonX</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +13,7 @@
     <div class="video">
          <video src="Untitled video - Made with Clipchamp.mp4" autoplay loop type="video/mp4"></video>
     </div>
+    <div class="cursor-light"></div>
     <section class="header">
         <select id="languages" name="languages" title="languages">
             <option value="en">🗽English</option>
@@ -38,18 +39,75 @@
         </div>
     </div>
 
+    <section class="Intro">
+        <div class="questions" id="intro1">
+            <label for="Start">Let's Get Started!!!</label>
+            <p>Answer the following questions <span id="honestly">honestly</span>, Results will be projected at the end.</p>
+            <button id="back01" class="back" type="button">Back</button>
+            <button id="next01" class="next" type="button">Next</button>
+        </div>
+    </section>
     <section class="slider">
-        <div id="questions" class="hidden">
+        <div id="q1" class="questions">
+            <p>1️⃣</p>
             <label for="transportation">🚇</label>
             <label for="transportation">
                 How Often do you travel by Public Transportations Services?...
             </label>
             <input type="range" id="transportation" min="0" max="4" value="2" step="1">
             <p id="description">Sometimes 😊</p>
-            <button id="back" type="button">Back</button>
-            <button id="next" type="button">Next</button>
+            <button id="back02" class="back" type="button">Back</button>
+            <button id="next02" class="next" type="button">Next</button>
         </div>
     </section>
+
+    <section class="slider">
+        <div class="questions" id="q2">
+            <p>2️⃣</p>
+            <label for="airtravel">✈️</label> 
+            <label for="airtravel">How many hours do you travel in flights per year?</label>
+            <p><input type="range" id="airtravel" min="0" max="4" value="2" step="1"></p>
+            <p id="description01"> 4 to 5 hours 😊</p>
+            <button id="back03" class="back" type="button">Back</button>
+            <button id="next03" class="next" type="button">Next</button>
+        </div>
+    </section>
+
+    <section class="slider">
+        <div class="questions" id="q3">
+            <p>3️⃣</p>
+            <label for="foodhabits">🥩 🥛</label> 
+            <label for="foodhabits">How often do you consume meat or dairy products?</label>
+            <p><input type="range" id="foodhabits" min="0" max="4" value="2" step="1"></p>
+            <p id="description02"> Sometimes 😊</p>
+            <button id="back04" class="back" type="button">Back</button>
+            <button id="next04" class="next" type="button">Next</button>
+        </div>
+    </section>
+
+    <section class="slider">
+        <div class="questions" id="q4">
+            <p>4️⃣</p>
+            <label for="housing">🏠</label> 
+            <label for="housing">What's your household size?</label>
+            <p><input type="range" id="housing" min="0" max="2" value="1" step="1"></p>
+            <p id="description03"> With my Partner 🥰</p>
+            <button id="back05" class="back" type="button">Back</button>
+            <button id="next05" class="next" type="button">Next</button>
+        </div>
+    </section>
+<section class="slider">
+        <div class="questions" id="q5">
+            <p>5️⃣</p>
+            <label for="energy">🔌</label> 
+            <label for="energy">How energy-efficient is your home?</label>
+            <p><input type="range" id="energy" min="0" max="4" value="2" step="1"></p>
+            <p id="description04">I use some energy-saving devices (LEDs, star-rated AC, etc.)🌿</p>
+            <button id="back06" class="back" type="button">Back</button>
+            <button id="next06" class="next" type="button">Next</button>
+        </div>
+    </section>
+
     <script src="script.js"></script>
 </body>
 </html>

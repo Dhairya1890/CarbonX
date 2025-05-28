@@ -15,6 +15,21 @@ video{
     z-index: -1;
     pointer-events: none;
 }
+
+.cursor-light {
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, transparent 80%);
+  pointer-events: none;
+  mix-blend-mode: screen;
+  z-index: 0; /* Just above video but below your content */
+  transform: translate(-50%, -50%);
+}
+
+
+
 .content-overlay{
     position: relative;
     z-index: 1;
@@ -114,11 +129,28 @@ video{
 input[type="range"]{
     width: 60%;
 }
-.hidden{
+#q1{
     display: none;
 }
-
-#questions {
+#q2{
+    display: none;
+}
+#q3{
+    display: none;
+}
+#q4{
+    display: none;
+}
+#q5{
+    display: none;
+}
+#intro1{
+    display: none;
+}
+#honestly{
+    font-weight: 500;
+}
+.questions {
   position: absolute; /* use fixed instead of absolute */
   top: 50%;
   left: 50%;
@@ -134,17 +166,20 @@ input[type="range"]{
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
-#back{
+.back{
     padding: 10px;
     color: #388e3c;
     cursor: pointer;
     border: none;
     background-color: white;
 }
-#next{
+.next{
     padding: 10px;
     color: #388e3c;
     cursor: pointer;
     border: none;
     background-color: white;
+}
+#transportation,#airtravel{
+    display: inline-block;
 }
