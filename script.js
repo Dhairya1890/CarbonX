@@ -134,6 +134,64 @@ energySlider.addEventListener("input", function () {
   Description05.textContent = energyLevels[value];
 });
 
+//Question 6
+
+const foodSlider = document.getElementById("food");
+const Description06 = document.getElementById("description05");
+
+const FoodGrowthLevels = [
+"None of the food 😥",
+"Some of the food🙂",
+"Almost all😀",
+"All Food WE EAT ARE LOCAL AND UNPROCESSED 😌"
+]
+
+foodSlider.addEventListener("input", function(){
+  const value = parseInt(this.value);
+  Description06.textContent = FoodGrowthLevels[value];
+});
+
+//Question 7
+
+const GarbageSlider = document.getElementById("garbage");
+const Description07 = document.getElementById("description06");
+
+const GarbageLevels = [
+"Much more than neighbours😥",
+"More than them🙂",
+"Same😀",
+"Less than neighbours 😌"
+]
+
+GarbageSlider.addEventListener("input", function(){
+  const value = parseInt(this.value);
+  Description07.textContent = GarbageLevels[value];
+});
+
+//Question 8
+const CarSlider = document.getElementById("car");
+const Description08 = document.getElementById("description07");
+
+CarSlider.oninput = function(){
+  Description08.innerHTML = `${this.value} KM's`;
+};
+
+//Question 9
+const PublicSlider = document.getElementById("public");
+const Description09 = document.getElementById("description08");
+
+PublicSlider.oninput = function(){
+  Description09.innerHTML = `${this.value} KM's`;
+};
+
+//Question 10
+const PlasticSlider = document.getElementById("waste");
+const Description010 = document.getElementById("description09");
+
+PlasticSlider.oninput = function(){
+  Description010.innerHTML = `${this.value} Bottles 🥤`;
+};
+
 document.getElementById("button").addEventListener("click", function (){
     document.getElementById("intro1").style.display = "block";
     document.getElementById("hero").style.display = "none";
@@ -193,4 +251,57 @@ document.getElementById("back06").addEventListener("click", function(){
     document.getElementById("q4").style.display = "block";
     document.getElementById("q5").style.display = "none";
 })
+
+document.getElementById("next06").addEventListener("click", function(){
+    document.getElementById("q5").style.display = "none";
+    document.getElementById("q6").style.display = "block";
+})
+
+document.getElementById("back07").addEventListener("click", function(){
+    document.getElementById("q5").style.display = "block";
+    document.getElementById("q6").style.display = "none";
+})
+
+document.getElementById("next07").addEventListener("click", function(){
+    document.getElementById("q6").style.display = "none";
+    document.getElementById("q7").style.display = "block";
+})
+
+document.getElementById("back08").addEventListener("click", function(){
+    document.getElementById("q6").style.display = "block";
+    document.getElementById("q7").style.display = "none";
+})
+
+document.getElementById("next08").addEventListener("click", function(){
+    document.getElementById("q7").style.display = "none";
+    document.getElementById("q8").style.display = "block";
+})
+
+document.getElementById("back09").addEventListener("click", function(){
+    document.getElementById("q7").style.display = "block";
+    document.getElementById("q8").style.display = "none";
+})
+
+document.getElementById("next09").addEventListener("click", function(){
+    document.getElementById("q8").style.display = "none";
+    document.getElementById("q9").style.display = "block";
+})
+
+document.getElementById("back010").addEventListener("click", function(){
+    document.getElementById("q8").style.display = "block";
+    document.getElementById("q9").style.display = "none";
+})
+
+
+document.getElementById("next010").addEventListener("click", function(){
+    document.getElementById("q9").style.display = "none";
+    document.getElementById("q10").style.display = "block";
+})
+
+document.getElementById("back011").addEventListener("click", function(){
+    document.getElementById("q9").style.display = "block";
+    document.getElementById("q10").style.display = "none";
+})
+
+
 
