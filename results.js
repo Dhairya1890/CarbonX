@@ -1,5 +1,5 @@
 //Evaluation System
-
+document.getElementById("Resultbutton").addEventListener("click", function(){
 let Q1 = parseInt(document.getElementById("transportation").value);
 let Q2 = parseInt(document.getElementById("airtravel").value);
 let Q3 = parseInt(document.getElementById("foodhabits").value);
@@ -10,7 +10,7 @@ let Q7 = parseInt(document.getElementById("garbage").value);
 let Q8 = parseInt(document.getElementById("car").value);
 let Q9 = parseInt(document.getElementById("public").value);
 let Q10 = parseInt(document.getElementById("waste").value);
+    let totalScore = Q1+Q2+Q3+Q4+Q5+Q6+Q7+Q8+Q9+Q10;
+    console.log(totalScore);
+})
 
-let totalScore = Q1+Q2+Q3+Q4+Q5+Q6+Q7+Q8+Q9+Q10;
-
-console.log(totalScore);

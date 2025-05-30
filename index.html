@@ -10,9 +10,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="video">
+    <!-- <div class="video">
          <video src="Untitled video - Made with Clipchamp.mp4" autoplay loop type="video/mp4"></video>
-    </div>
+    </div> -->
     <div class="cursor-light"></div>
     <section class="header">
         <select id="languages" name="languages" title="languages">
@@ -20,34 +20,33 @@
             <option value="in">🛺 Hindi</option>
         </select>
     </seciton>
-    <div class="content-overlay">
+    <!-- <div class="content-overlay">
     
     <section class="hero" id="hero">
     <h1 id="heading">🌍IF EVERYONE LIVED LIKE YOU...🌍</h1>
     <h4 id="sub-head1">See how your lifestyle could shape the future of our planet</h4>
     <h5 id="sub-head2">How much the global temperature will rise?</h5>
-    <button id="button">Find the X</button>
+   
     </section>
-    </div>
-
+    </div> -->
+ <!-- <button id="button">Find the X</button> -->
     <div class="modal" id="popup">
         <div class="modal-content">
-            <span class="close">&times;</span>
+            <span class="close"></span>
             <h4>You can change website language</h4>
             <h5>By selecting from the top.</h5>
             <button id="popup-close-button" type="button">Close</button>
         </div>
     </div>
 
-    <section class="Intro">
+    <div class="Intro">
         <div class="questions" id="intro1">
             <label for="Start">Let's Get Started!!!</label>
             <p>Answer the following questions <span id="honestly">honestly</span>, Results will be projected at the end.</p>
-            <button id="back01" class="back" type="button">Back</button>
             <button id="next01" class="next" type="button">Next</button>
         </div>
-    </section>
-    <section class="slider">
+    </div>
+    <div class="slider">
         <div id="q1" class="questions">
             <p>1️⃣</p>
             <label for="transportation">🚇</label>
@@ -59,9 +58,9 @@
             <button id="back02" class="back" type="button">Back</button>
             <button id="next02" class="next" type="button">Next</button>
         </div>
-    </section>
+    </div>
 
-    <section class="slider">
+    <div class="slider">
         <div class="questions" id="q2">
             <p>2️⃣</p>
             <label for="airtravel">✈️</label> 
@@ -71,9 +70,9 @@
             <button id="back03" class="back" type="button">Back</button>
             <button id="next03" class="next" type="button">Next</button>
         </div>
-    </section>
+    </div>
 
-    <section class="slider">
+    <div class="slider">
         <div class="questions" id="q3">
             <p>3️⃣</p>
             <label for="foodhabits">🥩 🥛</label> 
@@ -83,9 +82,9 @@
             <button id="back04" class="back" type="button">Back</button>
             <button id="next04" class="next" type="button">Next</button>
         </div>
-    </section>
+    </div>
 
-    <section class="slider">
+    <div class="slider">
         <div class="questions" id="q4">
             <p>4️⃣</p>
             <label for="housing">🏠</label> 
@@ -95,8 +94,8 @@
             <button id="back05" class="back" type="button">Back</button>
             <button id="next05" class="next" type="button">Next</button>
         </div>
-    </section>
-<section class="slider">
+    </div>
+<div class="slider">
         <div class="questions" id="q5">
             <p>5️⃣</p>
             <label for="energy">🔌</label> 
@@ -106,9 +105,9 @@
             <button id="back06" class="back" type="button">Back</button>
             <button id="next06" class="next" type="button">Next</button>
         </div>
-    </section>
+    </div>
 
-<section class="slider">
+<div class="slider">
         <div class="questions" id="q6">
             <p>6️⃣</p>
             <label for="food">🍅</label> 
@@ -118,9 +117,9 @@
             <button id="back07" class="back" type="button">Back</button>
             <button id="next07" class="next" type="button">Next</button>
         </div>
-    </section>
+    </div>
 
-<section class="slider">
+<div class="slider">
         <div class="questions" id="q7">
             <p>7️⃣</p>
             <label for="garbage">🗑️</label> 
@@ -130,9 +129,9 @@
             <button id="back08" class="back" type="button">Back</button>
             <button id="next08" class="next" type="button">Next</button>
         </div>
-    </section>
+    </div>
 
-<section class="slider">
+<div class="slider">
         <div class="questions" id="q8">
             <p>8️⃣</p>
             <label for="car">🚗</label> 
@@ -142,9 +141,9 @@
             <button id="back09" class="back" type="button">Back</button>
             <button id="next09" class="next" type="button">Next</button>
         </div>
-    </section>
+    </div>
 
-<section class="slider">
+<div class="slider">
         <div class="questions" id="q9">
             <p>9️⃣</p>
             <label for="public">🚌</label> 
@@ -154,9 +153,9 @@
             <button id="back010" class="back" type="button">Back</button>
             <button id="next010" class="next" type="button">Next</button>
         </div>
-    </section>
+    </div>
 
-<section class="slider">
+<div class="slider">
         <div class="questions" id="q10">
             <p>🔟</p>
             <label for="waste">🥤</label> 
@@ -164,9 +163,9 @@
             <p><input type="range" id="waste" min="0" max="9" value="3" step="1"></p>
             <p id="description09">3 Bottles 🥤</p>
             <button id="back011" class="back" type="button">Back</button>
-            <a class="Results" href="results.html">View Result</a>
+            <button type="button" id="Resultbutton" class="Results">View Results</button>
         </div>
-    </section>
+    </div>
 
     <script src="script.js"></script>
     <script src="results.js"></script>

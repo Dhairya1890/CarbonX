@@ -18,8 +18,8 @@ video{
 
 .cursor-light {
   position: fixed;
-  width: 200px;
-  height: 200px;
+  width: 400px;
+  height: 400px;
   border-radius: 50%;
   background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, transparent 80%);
   pointer-events: none;
@@ -28,9 +28,12 @@ video{
   transform: translate(-50%, -50%);
 }
 
+body{
+    background-color: black;
+}
 
 
-.content-overlay{
+/* .content-overlay{
     position: relative;
     z-index: 1;
     color: white;
@@ -42,7 +45,8 @@ video{
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 100px;
-}
+    filter: blur(4px);
+} */
 .header{
   position: relative;
   z-index: 2;
@@ -166,10 +170,15 @@ input[type="range"]{
     font-weight: 500;
 }
 .questions {
-  position: absolute; /* use fixed instead of absolute */
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* centers it horizontally and vertically */
+  display: flex; 
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  
+  /* position: absolute; use fixed instead of absolute */
+  /* top: 50%;
+  left: 50%; */
+  /* transform: translate(-50%, -50%); centers it horizontally and vertically */
   color: #388e3c;
   z-index: 999;
   background-color: white;
@@ -180,7 +189,13 @@ input[type="range"]{
   max-width: 1000px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
-
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    
+}
 .back{
     padding: 10px;
     color: #388e3c;

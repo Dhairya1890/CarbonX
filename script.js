@@ -192,14 +192,14 @@ PlasticSlider.oninput = function(){
   Description010.innerHTML = `${this.value} Bottles 🥤`;
 };
 
-document.getElementById("button").addEventListener("click", function (){
+document.getElementById("popup-close-button").addEventListener("click", function (){
     document.getElementById("intro1").style.display = "block";
-    document.getElementById("hero").style.display = "none";
+    document.getElementById("modal-content").style.display = "none";
 });
-document.getElementById("back01").addEventListener("click", function(){
-    document.getElementById("intro1").style.display = "none";
-    document.getElementById("hero").style.display = "block";
-});
+// document.getElementById("back01").addEventListener("click", function(){
+//     document.getElementById("intro1").style.display = "none";
+//     document.getElementById("hero").style.display = "block";
+// });
 document.getElementById("next01").addEventListener("click", function(){
     document.getElementById("intro1").style.display = "none";
     document.getElementById("q1").style.display = "block";
