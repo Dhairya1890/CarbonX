@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+
+.header{
+    overflow: hidden;
+    padding: 20px 10px;
+    font-family: Amatic SC;
+    font-size: x-large;
+    border: 1px solid;
+}
+
+.header-right a{
+    float: right;
+}
+.Name{
+    float: left;
+}
+.header a{
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    line-height: 25px;
+}
+@media screen and (max-width: 500px) {
+    .header a{
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .header-right{
+        float: none;
+    }
+}
+.hero{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+video{
+    width: 100%;
+    z-index: 0;
+    position: relative;
+    width: 1000px;
+    max-width: 100%;
+    height: auto;
+    margin-top: 50px;
+    display: block;
+}
+#video-blur{
+    width: 100%;
+    height: auto;
+}
+#video-blur.blur{
+    filter: blur(5px);
+    transition: filter 1s ease;
+}
+#hero-heading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Amatic SC;
+    font-size: 4vw;
+    font-weight: 700;
+    width: 90%;
+    opacity: 0;
+    max-width: 100%;
+    height: auto;
+}
+#hero-heading.appear{
+    opacity: 1;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Starting opacity */
+  }
+  to {
+    opacity: 1; /* Ending opacity */
+  }
+}
+.column {
+    float: left;
+    width: 20%;
+    padding: 0 10px;
+}
+.factsandfigures{
+    text-align: center;
+    border: 1px solid;
+    padding: 30px;
+    font-family: Amatic SC;
+    font-size: x-large;
+    font-weight: 700;
+}
+.facts-figures {
+    margin: 0 -5px;
+    font-family: Amatic SC;
+    font-size: large;
+    font-weight: 700;
+}
+.facts-figures:after{
+    content: "";
+    display: table;
+    clear: both;
+    width: 100%;
+    height: auto;
+}
+.card{
+    padding: 16px;
+    text-align: center;
+    border: 1px solid;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+@media screen and ( max-width : 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+.icons{
+    width: 50px;
+    height: auto;
+}
