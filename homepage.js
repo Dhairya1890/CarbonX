@@ -13,3 +13,7 @@ video.addEventListener('timeupdate', () => {
         image.classList.add('appear');
     }
 });
+
+document.getElementById("FindX-button").addEventListener('click', function(){
+    window.open("homepage.html", "_blank");
+})
