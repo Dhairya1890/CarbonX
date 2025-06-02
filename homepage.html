@@ -1,173 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CarbonX - Find the X</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <!-- <div class="video">
-         <video src="Untitled video - Made with Clipchamp.mp4" autoplay loop type="video/mp4"></video>
-    </div> -->
-    <div class="cursor-light"></div>
-    <section class="header">
-        <select id="languages" name="languages" title="languages">
-            <option value="en">🗽English</option>
-            <option value="in">🛺 Hindi</option>
-        </select>
-    </seciton>
-    <!-- <div class="content-overlay">
-    
-    <section class="hero" id="hero">
-    <h1 id="heading">🌍IF EVERYONE LIVED LIKE YOU...🌍</h1>
-    <h4 id="sub-head1">See how your lifestyle could shape the future of our planet</h4>
-    <h5 id="sub-head2">How much the global temperature will rise?</h5>
-   
+
+    <div class="header">
+        <a class="Name">CarbonX</a>
+        <div class="header-right">
+            <a class="active" href="#about">About</a>
+            <a target="_blank" href="index.html">Home</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="1st-half"><img src="1st-half.PNG" alt="1st-half" class="image"></div>
+        <div class="text">
+            <p>Let&apos;s Find the X!</p>
+            <p>Answer the below questions with full Honesty</p>
+            <p>Let&apos;s find out how much climate consious you are</p>
+        </div>
+        <div class="2nd-half"><img src="2nd-half.PNG" alt="2nd-half" class="image"></div>
+    </div>
+    <div class="question-container">
+        <div class="slider">
+                    <div id="q1" class="questions">
+                            <p>1</p>
+                            <label for="transportation">
+                                    How Often do you travel by Public Transportations Services?...
+                                </label>
+                            <input type="range" id="transportation" min="0" max="4" value="2" step="1">
+                            <p id="description">Sometimes</p>
+                        </div>
+                </div>
+
+            <div class="slider">
+                    <div class="questions" id="q2">
+                            <p>2</p>
+                            <label for="airtravel">How many hours do you travel in flights per year?</label>
+                            <p><input type="range" id="airtravel" min="0" max="4" value="2" step="1"></p>
+                            <p id="description01"> 4 to 5 hours</p>
+                        </div>
+                </div>
+
+            <div class="slider">
+                    <div class="questions" id="q3">
+                            <p>3</p>
+                            <label for="foodhabits">How often do you consume meat or dairy products?</label>
+                            <p><input type="range" id="foodhabits" min="0" max="4" value="2" step="1"></p>
+                            <p id="description02"> Sometimes</p>
+                        </div>
+                </div>
+
+            <div class="slider">
+                    <div class="questions" id="q4">
+                            <p>4</p>
+                            <label for="housing">How many people you live with?</label>
+                            <p><input type="range" id="housing" min="0" max="2" value="1" step="1"></p>
+                            <p id="description03"> With my Partner</p>
+                        </div>
+                </div>
+        <div class="slider">
+                    <div class="questions" id="q5">
+                            <p>5</p>
+                            <label for="energy">How energy-efficient is your home?</label>
+                            <p><input type="range" id="energy" min="0" max="4" value="2" step="1"></p>
+                            <p id="description04">I use some energy-saving devices (LEDs, star-rated AC, etc.)</p>
+                        </div>
+                </div>
+
+        <div class="slider">
+                    <div class="questions" id="q6">
+                            <p>6</p>
+                            <label for="food">How much of the food that you eat is unprocessed, unpackaged or locally
+                    grown?</label>
+                            <p><input type="range" id="food" min="0" max="3" value="2" step="1"></p>
+                            <p id="description05">Almost all</p>
+                        </div>
+                </div>
+
+        <div class="slider">
+                    <div class="questions" id="q7">
+                            <p>7</p>
+                            <label for="garbage">Compared to your neighbors, how much trash do you generate?</label>
+                            <p><input type="range" id="garbage" min="0" max="3" value="2" step="1"></p>
+                            <p id="description06">Same</p>
+                        </div>
+                </div>
+
+        <div class="slider">
+                    <div class="questions" id="q8">
+                            <p>8</p>
+                            <label for="car">How far do you travel by car or motorcycle each week?</label>
+                            <p><input type="range" id="car" min="0" max="500" value="50" step="1"></p>
+                            <p id="description07">50 KM's</p>
+                        </div>
+                </div>
+
+        <div class="slider">
+                    <div class="questions" id="q9">
+                            <p>9</p>
+                            <label for="public">How far do you travel on public transportation each week?</label>
+                            <p><input type="range" id="public" min="0" max="500" value="50" step="1"></p>
+                            <p id="description08">50 KM's</p>
+                        </div>
+                </div>
+
+        <div class="slider">
+                    <div class="questions" id="q10">
+                            <p>10</p>
+                            <label for="waste">How much platics water bottles do you buy while outside per day?</label>
+                            <p><input type="range" id="waste" min="0" max="9" value="3" step="1"></p>
+                            <p id="description09">3 Bottles</p>
+                            <button type="button" id="Resultbutton" class="Results">View Results</button>
+                        </div>
+                </div>
+    </div>
+
+    <div id="results-popup">
+        <p class="result">Your Score</p>
+        <div class="top"><img id="badge" src="medal1.png" alt="eco-champion"></div>
+        <div class="bottom">
+            <p id="text1">You are a <span class="bold">Eco-Champion!</span></p>
+            <p id="text2">You only emit :<span class="bold">1-2 CO<sub>2</sub>/year</span></p>
+            <p id="text3">If Everyone lived liked you :<span class="bold">Only ~1.2&#176;</span> or lower Temp Rise!</p>
+            <p id="text4"><span class="bold">You are giving this planet a Sustainable Future!</span></p>
+            <p id="text5"><span id="warning">The good part : </span>You&apos;re leading the way toward a sustainable future. At just 1–2 tons/year, your lifestyle is
+                proof that low-impact living is possible — and powerful. Stay strong and inspire others</p>
+        </div>
+    </div>
+
+    <section id="about">
+        <footer>
+            <div class="container-foot">
+                <div class="top">
+                    <p class="top-footer">CarbonX</p>
+                </div>
+                <div class="bottom">Let&apos;s Connect!
+                    <div class="logos">
+                        <a target="_blank" href="https://www.linkedin.com/in/dhairya-sharma-80565532a/"
+                            rel="noopener"><img src="linkedin (1).png" id="icons" alt="LinkedIn"></a>
+                        <a target="_blank" href="https://github.com/Dhairya1890" rel="noopener"><img src="github.png"
+                                id="icons" alt="Github"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </section>
-    </div> -->
- <!-- <button id="button">Find the X</button> -->
-    <div class="modal" id="popup">
-        <div class="modal-content">
-            <span class="close"></span>
-            <h4>You can change website language</h4>
-            <h5>By selecting from the top.</h5>
-            <button id="popup-close-button" type="button">Close</button>
-        </div>
-    </div>
 
-    <div class="Intro">
-        <div class="questions" id="intro1">
-            <label for="Start">Let's Get Started!!!</label>
-            <p>Answer the following questions <span id="honestly">honestly</span>, Results will be projected at the end.</p>
-            <button id="next01" class="next" type="button">Next</button>
-        </div>
-    </div>
-    <div class="slider">
-        <div id="q1" class="questions">
-            <p>1️⃣</p>
-            <label for="transportation">🚇</label>
-            <label for="transportation">
-                How Often do you travel by Public Transportations Services?...
-            </label>
-            <input type="range" id="transportation" min="0" max="4" value="2" step="1">
-            <p id="description">Sometimes 😊</p>
-            <button id="back02" class="back" type="button">Back</button>
-            <button id="next02" class="next" type="button">Next</button>
-        </div>
-    </div>
 
-    <div class="slider">
-        <div class="questions" id="q2">
-            <p>2️⃣</p>
-            <label for="airtravel">✈️</label> 
-            <label for="airtravel">How many hours do you travel in flights per year?</label>
-            <p><input type="range" id="airtravel" min="0" max="4" value="2" step="1"></p>
-            <p id="description01"> 4 to 5 hours 😊</p>
-            <button id="back03" class="back" type="button">Back</button>
-            <button id="next03" class="next" type="button">Next</button>
-        </div>
-    </div>
-
-    <div class="slider">
-        <div class="questions" id="q3">
-            <p>3️⃣</p>
-            <label for="foodhabits">🥩 🥛</label> 
-            <label for="foodhabits">How often do you consume meat or dairy products?</label>
-            <p><input type="range" id="foodhabits" min="0" max="4" value="2" step="1"></p>
-            <p id="description02"> Sometimes 😊</p>
-            <button id="back04" class="back" type="button">Back</button>
-            <button id="next04" class="next" type="button">Next</button>
-        </div>
-    </div>
-
-    <div class="slider">
-        <div class="questions" id="q4">
-            <p>4️⃣</p>
-            <label for="housing">🏠</label> 
-            <label for="housing">What's your household size?</label>
-            <p><input type="range" id="housing" min="0" max="2" value="1" step="1"></p>
-            <p id="description03"> With my Partner 🥰</p>
-            <button id="back05" class="back" type="button">Back</button>
-            <button id="next05" class="next" type="button">Next</button>
-        </div>
-    </div>
-<div class="slider">
-        <div class="questions" id="q5">
-            <p>5️⃣</p>
-            <label for="energy">🔌</label> 
-            <label for="energy">How energy-efficient is your home?</label>
-            <p><input type="range" id="energy" min="0" max="4" value="2" step="1"></p>
-            <p id="description04">I use some energy-saving devices (LEDs, star-rated AC, etc.)🌿</p>
-            <button id="back06" class="back" type="button">Back</button>
-            <button id="next06" class="next" type="button">Next</button>
-        </div>
-    </div>
-
-<div class="slider">
-        <div class="questions" id="q6">
-            <p>6️⃣</p>
-            <label for="food">🍅</label> 
-            <label for="food">How much of the food that you eat is unprocessed, unpackaged or locally grown?</label>
-            <p><input type="range" id="food" min="0" max="3" value="2" step="1"></p>
-            <p id="description05">Almost all😀</p>
-            <button id="back07" class="back" type="button">Back</button>
-            <button id="next07" class="next" type="button">Next</button>
-        </div>
-    </div>
-
-<div class="slider">
-        <div class="questions" id="q7">
-            <p>7️⃣</p>
-            <label for="garbage">🗑️</label> 
-            <label for="garbage">Compared to your neighbors, how much trash do you generate?</label>
-            <p><input type="range" id="garbage" min="0" max="3" value="2" step="1"></p>
-            <p id="description06">Same😀</p>
-            <button id="back08" class="back" type="button">Back</button>
-            <button id="next08" class="next" type="button">Next</button>
-        </div>
-    </div>
-
-<div class="slider">
-        <div class="questions" id="q8">
-            <p>8️⃣</p>
-            <label for="car">🚗</label> 
-            <label for="car">How far do you travel by car or motorcycle each week?</label>
-            <p><input type="range" id="car" min="0" max="500" value="50" step="1"></p>
-            <p id="description07">50 KM's</p>
-            <button id="back09" class="back" type="button">Back</button>
-            <button id="next09" class="next" type="button">Next</button>
-        </div>
-    </div>
-
-<div class="slider">
-        <div class="questions" id="q9">
-            <p>9️⃣</p>
-            <label for="public">🚌</label> 
-            <label for="public">How far do you travel on public transportation each week?</label>
-            <p><input type="range" id="public" min="0" max="500" value="50" step="1"></p>
-            <p id="description08">50 KM's</p>
-            <button id="back010" class="back" type="button">Back</button>
-            <button id="next010" class="next" type="button">Next</button>
-        </div>
-    </div>
-
-<div class="slider">
-        <div class="questions" id="q10">
-            <p>🔟</p>
-            <label for="waste">🥤</label> 
-            <label for="waste">How much platics water bottles do you buy while outside per day?</label>
-            <p><input type="range" id="waste" min="0" max="9" value="3" step="1"></p>
-            <p id="description09">3 Bottles 🥤</p>
-            <button id="back011" class="back" type="button">Back</button>
-            <button type="button" id="Resultbutton" class="Results">View Results</button>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
     <script src="results.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
