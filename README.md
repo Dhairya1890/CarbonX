@@ -33,5 +33,5 @@ Try it live: [https://your-live-demo-link.com](https://your-live-demo-link.com)
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/carbon-x.git
+   git clone https://github.com/Dhairya1890/CarbonX.git
    cd carbon-x
