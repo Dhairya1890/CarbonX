@@ -18,7 +18,7 @@
 ## 📸 Demo
 
 
-Try it live: [https://your-live-demo-link.com](https://your-live-demo-link.com)
+Try it live: [https://carbonx-zeta.vercel.app/](https://carbonx-zeta.vercel.app/)
 
 ---
 
